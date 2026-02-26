@@ -2,11 +2,13 @@ public class Student
 {
     int id;
     String name;
+    int age;
 
-    public Student(int id, String name)
+    public Student(int id, String name, int age)
     {
         this.id = id;
         this.name = name;
+        this.age = age;
     }
 
     //getter and setters
@@ -26,6 +28,14 @@ public class Student
     {
         this.name = name;
     }
+    public int getAge()
+    {
+        return age;
+    }
+    public void setAge(int age)
+    {
+        this.age = age;
+    }
 
     //tostrings
     @Override
@@ -34,8 +44,9 @@ public class Student
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                    ", age=" + age +
                 '}';
     }
 
-    
+
 }
